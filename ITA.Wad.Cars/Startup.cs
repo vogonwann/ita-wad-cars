@@ -28,9 +28,8 @@ namespace ITA.Wad.Cars
             services.AddRazorPages();
             services.AddControllers();
             services.AddDbContext<ApplicationDbContext>(options =>
-            {
-                options.UseSqlServer("name=ConectionStrings:Default");
-            });
+                options.UseSqlServer("name=ConnectionStrings:Default")
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
